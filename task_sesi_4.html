@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARY AL-FAIQ - Web Developer Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-top: 20px;
+    }
+    .hero-section {
+      padding: 48px 0 32px 0;
+      background: #fff;
+    }
+    .about-section {
+      padding: 40px 0 24px 0;
+    }
+    .about-icons {
+      font-size: 2rem;
+      color: #ff8400;
+      margin-bottom: 4px;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+    .about-icons:hover {
+      color: #1880f7;
+      transform: scale(1.13);
+    }
+    .my-projects-section {
+      padding: 40px 0 24px 0;
+      background: #fafbfc;
+    }
+    .category-btns .btn {
+      margin: 0 4px 8px 0;
+    }
+    .navbar-brand img {
+      max-height: 36px;
+      margin-right: 6px;
+    }
+    .fw-orange {
+      color: #ff8400;
+      font-weight: bold;
+    }
+    .social-icons a {
+      color: #222;
+      font-size: 1.35rem;
+      margin: 0 8px;
+      transition: color 0.18s;
+    }
+    .social-icons a:hover {
+      color: #ff8400;
+    }
+    .carousel .carousel-item img {
+      height: 320px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+    .carousel-caption {
+      background: rgba(255,255,255,0.92);
+      border-radius: 0 0 12px 12px;
+      padding: 1rem 1.2rem 0.6rem 1.2rem;
+      color: #222;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+     /* Custom carousel control colors */
+     .carousel-control-prev, .carousel-control-next {
+      width: 48px;
+      height: 48px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #ff8400;
+      border-radius: 50%;
+      opacity: 0.95;
+      transition: background 0.2s, opacity 0.2s;
+    }
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+      opacity: 1;
+      background: #ff8400;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none !important;
+      color: #fff;
+      font-size: 2rem;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel-control-prev-icon::after {
+      content: '\f284';
+      font-family: "Bootstrap-icons";
+      font-size: 2rem;
+      color: #fff;
+    }
+    .carousel-control-next-icon::after {
+      content: '\f285';
+      font-family: "Bootstrap-icons";
+      font-size: 2rem;
+      color: #fff;
+    }
+    @media (max-width: 991px) {
+      .profile-img {
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+      .carousel .carousel-item img {
+        height: 220px;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel .carousel-item img {
+        height: 120px;
+      }
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 16px 0;
+      margin-top: 32px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="images/Kartun Saint Seiya_remix_02a.png" alt="Logo"> ARY AL-FAIQ
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning text-white ms-lg-2" href="#" style="font-weight:500;">Download CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="mb-2" style="font-size:1.1em;">Hi I am</div>
+          <div class="mb-1">
+            <span class="fw-orange">ARY ANDRIANSYAH AL-FAIQ</span>
+          </div>
+          <h1 class="fw-bold mb-2" style="font-size:2.75em;">Web Developer</h1>
+          <p class="mb-4" style="max-width: 480px;">Lorem ipsum dolor sit amet consectetur. Habitant amet sed massa dictum nec habit. Aliquet donec morbi convallis pretium. Turpis tempor pretium.</p>
+          <a class="btn btn-warning text-white px-4 py-2" href="#" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img class="profile-img" src="images/Kartun Saint Seiya_remix_02a.png" alt="Profile">
+          <div class="mt-4 social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Me Modal -->
+  <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hireMeModalLabel">Hire Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="inputName" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="inputName" name="nama" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="inputPesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="inputPesan" name="pesan" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn btn-warning text-white">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section class="about-section text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-2" style="font-size:2em;">About Me</h2>
+      <p class="mb-5 text-muted" style="max-width:600px; margin:auto;">
+        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus. Aliquam donec morbi convallis porttitor. Turpis tempor pretium.
+      </p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-person-fill"></i></div>
+          <div class="fw-bold">Full Name</div>
+          <div>ARY ANDRIANSYAH AL-FAIQ</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="fw-bold">Education</div>
+          <div>Universitas Gadjah Mada</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="fw-bold">Pekerjaan</div>
+          <div>Pekerja</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-envelope-fill"></i></div>
+          <div class="fw-bold">Contact</div>
+          <div>aryalfaq@gmail.com<br>+62 821 9876 5432</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-heart-fill"></i></div>
+          <div class="fw-bold">Hobi</div>
+          <div>Membaca Buku, Traveling</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-geo-alt-fill"></i></div>
+          <div class="fw-bold">Alamat</div>
+          <div>Jl. Mawar No. 120, Jakarta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects Section -->
+  <section class="my-projects-section">
+    <div class="container">
+      <h2 class="fw-bold mb-2 text-center" style="font-size:2em;">My Projects</h2>
+      <p class="mb-4 text-center text-muted" style="max-width:600px; margin:auto;">
+        Lorem ipsum dolor sit amet consectetur. Morbi vitae elit dictum mauris sit vitae sit massa. Proin leo consequat urna sed.
+      </p>
+      <div class="text-center category-btns mb-5">
+        <button class="btn btn-outline-secondary btn-sm">All</button>
+        <button class="btn btn-warning btn-sm text-white">Web Design</button>
+        <button class="btn btn-outline-secondary btn-sm">App Design</button>
+        <button class="btn btn-outline-secondary btn-sm">Graphic Design</button>
+      </div>
+      <!-- Bootstrap Carousel Start -->
+      <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img_web1.png" class="mx-auto d-block" alt="Project 1">
+            <div class="carousel-caption">
+              <div class="fw-bold">AirCalling Landing Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img_web2.png" class="mx-auto d-block" alt="Project 2">
+            <div class="carousel-caption">
+              <div class="fw-bold mb-1">Business Landing Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img_web3.png" class="mx-auto d-block" alt="Project 3">
+            <div class="carousel-caption">
+              <div class="fw-bold mb-1">Exam Web Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Bootstrap Carousel End -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; ab2k 2025
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
