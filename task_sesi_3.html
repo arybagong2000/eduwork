@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fawziul - Web Developer Profile</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      margin-top: 20px;
+    }
+    .hero-section {
+      padding: 48px 0 32px 0;
+      background: #fff;
+    }
+    .about-section {
+      padding: 40px 0 24px 0;
+    }
+    .about-icons {
+      font-size: 2rem;
+      color: #ff8400;
+      margin-bottom: 4px;
+    }
+    .my-projects-section {
+      padding: 40px 0 24px 0;
+      background: #fafbfc;
+    }
+    .category-btns .btn {
+      margin: 0 4px 8px 0;
+    }
+    .project-card img {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    .project-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.04);
+      margin-bottom: 24px;
+      background: #fff;
+    }
+    .navbar-brand img {
+      max-height: 36px;
+      margin-right: 6px;
+    }
+    .fw-orange {
+      color: #ff8400;
+      font-weight: bold;
+    }
+    .social-icons a {
+      color: #222;
+      font-size: 1.35rem;
+      margin: 0 8px;
+      transition: color 0.18s;
+    }
+    .social-icons a:hover {
+      color: #ff8400;
+    }
+    @media (max-width: 991px) {
+      .profile-img {
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+        <img src="images/Kartun Saint Seiya_remix_02a.png" alt="Logo"> ARY AL-FAIQ
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item">
+            <a class="btn btn-warning text-white ms-lg-2" href="#" style="font-weight:500;">Download CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="mb-2" style="font-size:1.1em;">Hi I am</div>
+          <div class="mb-1">
+            <span class="fw-orange">ARY ANDRIANSYAH AL-FAIQ</span>
+          </div>
+          <h1 class="fw-bold mb-2" style="font-size:2.75em;">Web Developer</h1>
+          <p class="mb-4" style="max-width: 480px;">Lorem ipsum dolor sit amet consectetur. Habitant amet sed massa dictum nec habit. Aliquet donec morbi convallis pretium. Turpis tempor pretium.</p>
+          <a class="btn btn-warning text-white px-4 py-2" href="#">Hire Me</a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img class="profile-img" src="images/Kartun Saint Seiya_remix_02a.png" alt="Profile">
+          <div class="mt-4 social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-2" style="font-size:2em;">About Me</h2>
+      <p class="mb-5 text-muted" style="max-width:600px; margin:auto;">
+        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus. Aliquam donec morbi convallis porttitor. Turpis tempor pretium.
+      </p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-person-fill"></i></div>
+          <div class="fw-bold">Full Name</div>
+          <div>Johan Doe</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="fw-bold">Education</div>
+          <div>Universitas Gadjah Mada</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-briefcase-fill"></i></div>
+          <div class="fw-bold">Pekerjaan</div>
+          <div>Pekerja</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-envelope-fill"></i></div>
+          <div class="fw-bold">Contact</div>
+          <div>johndoe@gmail.com<br>+62 821 9876 5432</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-heart-fill"></i></div>
+          <div class="fw-bold">Hobi</div>
+          <div>Membaca Buku, Traveling</div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="about-icons"><i class="bi bi-geo-alt-fill"></i></div>
+          <div class="fw-bold">Alamat</div>
+          <div>Jl. Mawar No. 120, Jakarta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects Section -->
+  <section class="my-projects-section">
+    <div class="container">
+      <h2 class="fw-bold mb-2 text-center" style="font-size:2em;">My Projects</h2>
+      <p class="mb-4 text-center text-muted" style="max-width:600px; margin:auto;">
+        Lorem ipsum dolor sit amet consectetur. Morbi vitae elit dictum mauris sit vitae sit massa. Proin leo consequat urna sed.
+      </p>
+      <div class="text-center category-btns mb-5">
+        <button class="btn btn-outline-secondary btn-sm">All</button>
+        <button class="btn btn-warning btn-sm text-white">Web Design</button>
+        <button class="btn btn-outline-secondary btn-sm">App Design</button>
+        <button class="btn btn-outline-secondary btn-sm">Graphic Design</button>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/img_web1.png" class="w-100" alt="Project 1">
+            <div class="p-3">
+              <div class="fw-bold mb-1">AirCalling Landing Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/img_web2.png" class="w-100" alt="Project 2">
+            <div class="p-3">
+              <div class="fw-bold mb-1">Business Landing Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/img_web3.png" class="w-100" alt="Project 3">
+            <div class="p-3">
+              <div class="fw-bold mb-1">Exam Web Page Design</div>
+              <div class="text-muted">UI/UX, Web Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
